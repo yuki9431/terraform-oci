@@ -22,7 +22,6 @@ locals {
     display_name          = "unamed instance",
     extended_metadata     = null,
     fault_domain          = null,
-    hostname_label        = null,
     ipxe_script           = null,
     pv_encr_trans_enabled = null,
 
@@ -243,7 +242,6 @@ resource "oci_core_instance" "this" {
   display_name                        = each.key != null ? each.key : "${local.instance_defaults.display_name}"
   fault_domain                        = each.value.fault_domain != null ? each.value.fault_domain : local.instance_defaults.fault_domain
   freeform_tags                       = each.value.freeform_tags != null ? each.value.freeform_tags : local.free_tags_default
-  hostname_label                      = each.value.hostname_label != null ? each.value.hostname_label : local.instance_defaults.hostname_label
   ipxe_script                         = each.value.ipxe_script != null ? each.value.ipxe_script : local.instance_defaults.ipxe_script
   is_pv_encryption_in_transit_enabled = each.value.pv_encr_trans_enabled != null ? each.value.pv_encr_trans_enabled : local.instance_defaults.pv_encr_trans_enabled
 
