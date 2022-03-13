@@ -48,6 +48,9 @@ locals {
     cons_conn_def_tags  = null,
     cons_conn_free_tags = null,
 
+    plugins_config = {
+      bastion = "ENABLED"
+    }
 
   }
 
@@ -218,6 +221,11 @@ resource "oci_core_instance" "this" {
 
   agent_config {
     is_monitoring_disabled = each.value.is_monitoring_disabled != null ? each.value.is_monitoring_disabled : local.instance_defaults.is_monitoring_disabled
+
+    plugins_config {
+      desired_state = each.value.plugins_config.bastion != null ? each.value.plugins_config.bastion : local.instance_defaults.plugins_config.bastion
+      name          = "Bastion"
+    }
   }
 
   create_vnic_details {

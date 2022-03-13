@@ -81,6 +81,8 @@ variable "instances" {
     cons_conn_def_tags  = map(string),
     cons_conn_free_tags = map(string),
 
+    plugins_config = map(string),
+
   }))
 
   description = "Parameters for each instance to be created/managed."
@@ -131,7 +133,10 @@ variable "instances" {
 
     cons_conn_create                    = null,
     cons_conn_def_tags                  = null,
-    cons_conn_free_tags                 = null
+    cons_conn_free_tags                 = null,
+    
+    plugins_config                      = null
+
   }
 */
 }
