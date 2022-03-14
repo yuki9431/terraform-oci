@@ -4,7 +4,7 @@
 # Instances
 
 output "instance" {
-  description = "The returned resource attributes for the VCN."
+  description = "The returned resource attributes for the instances."
   value = {
     for x in oci_core_instance.this :
     x.display_name => x
@@ -25,6 +25,3 @@ output "oci_mkp_agreements" {
   description = "OCI Market Place Instance Agreements"
   value       = local.mkp_image_details
 }
-
-
-
