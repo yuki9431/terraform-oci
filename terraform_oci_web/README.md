@@ -22,12 +22,14 @@ It creates the following resources:
 ***Security***
 - Bation Service
 
-<img src=https://github.com/yuki9431/Demo/blob/master/terraform_oci_web/oci-web.png>
+<img src="./docs/oci-web.png">
 
 
 ## Usage
 ```bash
-$ git clone https://github.com/yuki9431/terraform_oci_web.git
+$ git clone https://github.com/yuki9431/terraform-oci
+
+$ cd terraform-oci/terraform_oci_web
 ```
 
 Create a terraform.tfvars by referring to [terraform.tfvars_sample](./terraform.tfvars_sample).

@@ -1,7 +1,6 @@
 # terraform-oci
 
-OCI (Oracle Cloud Infrastructure) 向けの Terraform 構成とモジュールを1つにまとめたもの。
-各ディレクトリは元リポジトリの履歴を保持したまま `git subtree` で取り込んでいる。
+OCI (Oracle Cloud Infrastructure) 向けの Terraform 構成とモジュール集。
 
 | ディレクトリ | 内容 |
 |---|---|
@@ -13,8 +12,6 @@ OCI (Oracle Cloud Infrastructure) 向けの Terraform 構成とモジュール�
 ## モジュール参照について
 
 `terraform_oci_web` は同居する2つのモジュールを相対パスで参照している。
-統合前は `source = "github.com/yuki9431/..."` だったが、リポジトリを跨がなくなったため
-ローカル参照に変更した。
 
 ```hcl
 # terraform_oci_web/oci_instances.tf

@@ -1,10 +1,12 @@
 # Overview
 create this resource on oci.
-<img src=https://github.com/yuki9431/Demo/blob/master/terraform_oci_minimal_web/oci_terraform.png>
+<img src="./docs/oci_terraform.png">
 
 # QuickStart
 ```shell
-$ git clone https://github.com/yuki9431/terraform_oci_minimal_web.git
+$ git clone https://github.com/yuki9431/terraform-oci
+
+$ cd terraform-oci/terraform_oci_minimal_web
 
 $ vi oci_web/terraform.tfvars
 ```
