@@ -63,7 +63,7 @@ terraform {
 - [Oracle Cloud Infrastructure Documentation: Set Up OCI Terraform](https://docs.oracle.com/en-us/iaas/developer-tutorials/tutorials/tf-provider/01-summary.htm)
 
 ## Author
-[Dillen H. Tomida](https://twitter.com/t0mihir0)
+[Dillen H. Tomida](https://github.com/yuki9431)
 
 
 ## License
